@@ -1,22 +1,7 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
 import 'foundation-apps/dist/css/foundation-apps.css'
+import Board from '../../containers/Board'
 
-import styles from './styles.scss'
-
-const propTypes = {
-  children: PropTypes.element
+export default function App() {
+  return <main><Board /></main>
 }
-
-export default function App({ children }) {
-  return (
-    <div>
-      <h1 className={styles.heading}>
-        Zeal React Boilerplate Test
-      </h1>
-
-      {children}
-    </div>
-  )
-}
-
-App.propTypes = propTypes
